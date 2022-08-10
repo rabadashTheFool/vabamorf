@@ -2,10 +2,8 @@
 #define POST_FSC_H
 
 #include <assert.h>
-#if defined( WIN32 ) || defined( WIN64 )
 #include <fcntl.h>
 #include <io.h>
-#endif
 #include <time.h>
 
 #include "../fsc/fsc.h"
