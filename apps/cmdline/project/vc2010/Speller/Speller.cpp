@@ -1,5 +1,6 @@
 #include "vcclr.h"
 #include "Speller.h"
+#include <set>
 
 using namespace std;
 using namespace System::Runtime::InteropServices;
@@ -18,11 +19,11 @@ namespace CLI
 	System::Collections::Generic::List<String^>^ Speller::Suggest(String^ word)
 	{
 		vector<wstring> suggestions = m_Instance->suggest(string_to_wstring(word));
+
 		System::Collections::Generic::List<String^>^ list = gcnew System::Collections::Generic::List<String^>();
 		for (size_t i = 0; i < suggestions.size(); i++)
 		{
-			String^ str = gcnew String(suggestions[0].data());
-			list->Add(str);
+			list->Add(gcnew String(suggestions[i].data()));
 		}
 		return list;
 	}
