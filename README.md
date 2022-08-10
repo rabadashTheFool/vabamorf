@@ -1,3 +1,5 @@
+Created a project for building a wrapped speller dll for .net framework
+
 # Tools for Estonian morphology
 
 * Compiling
