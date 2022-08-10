@@ -35,9 +35,6 @@
     <ClCompile Include="..\..\..\stlspeller\speller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\stlspeller\stlspeller.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\..\lib\proof\linguistic.cpp">
       <Filter>proof</Filter>
     </ClCompile>

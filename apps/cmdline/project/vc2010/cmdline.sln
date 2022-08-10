@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "etana", "etana\etana.vcxproj", "{5567FF6E-B714-43FA-B41F-4C9C1161C9AC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "etsyn", "etsyn\etsyn.vcxproj", "{7ECE7629-AFB9-424A-9810-20C5F0DB3ACC}"
@@ -12,6 +14,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "linguistic_jni", "linguistic_jni\linguistic_jni.vcxproj", "{1B6D65D9-206E-4590-B2F3-695B948FBA6C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "disambiguator_jni", "disambiguator_jni\disambiguator_jni.vcxproj", "{CBB8A90C-7D1C-43EA-B44C-1778195C2101}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Speller", "Speller\Speller.vcxproj", "{D7A13252-C9B0-4474-9A33-05BB160068BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,8 +73,19 @@ Global
 		{CBB8A90C-7D1C-43EA-B44C-1778195C2101}.Release|Win32.Build.0 = Release|Win32
 		{CBB8A90C-7D1C-43EA-B44C-1778195C2101}.Release|x64.ActiveCfg = Release|x64
 		{CBB8A90C-7D1C-43EA-B44C-1778195C2101}.Release|x64.Build.0 = Release|x64
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Debug|Win32.Build.0 = Debug|Win32
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Debug|x64.ActiveCfg = Debug|x64
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Debug|x64.Build.0 = Debug|x64
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Release|Win32.ActiveCfg = Release|Win32
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Release|Win32.Build.0 = Release|Win32
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Release|x64.ActiveCfg = Release|x64
+		{D7A13252-C9B0-4474-9A33-05BB160068BA}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AEDF6B6-2DB8-4CE6-B297-E0C3A3DA8B18}
 	EndGlobalSection
 EndGlobal
