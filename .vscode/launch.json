@@ -1,0 +1,254 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "split_tokens",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/split_tokens.db",
+            "cwd": "${workspaceFolder}/apps/cmdline/project/unix/",
+            "args": [ "proov.txt", "-" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "split_tokensn",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/apps/cmdline/project/unix",
+            "program": "./split_tokens.db",
+            "env": {},
+            "args": ["proov.txt", "-"]
+        },
+        {
+            "name": "flask_api_vmetyjson",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/docker/flask_vmetyjson",
+            "program": "./flask_vmetyjson.py",
+            "env": {},
+            "args": ["-d"]
+        },
+        {
+            "name": "vmetajson",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/vmetajson.db",
+            "cwd": "${workspaceFolder}/apps/cmdline/project/unix/",
+            "args": [ "--json={\\\"tss\\\":\\\"kinnipeetud\\\tmees\\\"}" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        // vmetyjson -------
+        {
+            "name": "vmetyjson",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/vmetyjson.db",
+            "cwd": "${workspaceFolder}/apps/cmdline/project/unix/",
+            "args": [ "--formattedjson", "--json=@test2.json"],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "flask_vmetsjson.py",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/docker/flask_vmetsjson/",
+            "program": "./flask_vmetsjson.py",
+            "args": [],
+        },
+        {
+            "name": "vmetsjon",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/vmetsjson.db",
+            "cwd": "${workspaceFolder}/apps/cmdline/project/unix/",
+            "args": [ "--path=${workspaceFolder}/dct/binary/", "--json={\\\"content\\\":\\\"tere\\\", \\\"params\\\":{\\\"vmetsjaon\\\":[\\\"--formattedjson\\\"]}}" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "stlspellerjson dflt",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/stlspellerjson.db",
+            "cwd": "${workspaceFolder}/apps/cmdline/project/unix/",
+            "args": [ "--path=.", "--json={\\\"content\\\":\\\"terre creedo vanamees\\\", \\\"params\\\":{\\\"stlspellerjson\\\":[\\\"--formattedjson\\\"]}}" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+
+        // vmetajson -------
+        {
+            "name": "vmetajson dflt",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/vmetajson.db",
+            "cwd": "${workspaceFolder}",
+            "args": [ "--json={\\\"content\\\":\\\"creedo vanamees\\\", \\\"params\\\":{\\\"vmetajson\\\":[\\\"--formattedjson\\\"]}}" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "vmetajson guess",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/vmetajson.db",
+            "cwd": "${workspaceFolder}",
+            "args": [ "--json={\\\"content\\\":\\\"creedo vanamees\\\", \\\"params\\\":{\\\"vmetajson\\\":[\\\"--formattedjson\\\", \\\"--guess\\\"]}}" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        //----vmetltjson
+        {
+            "name": "vmetltjson dflt",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/vmetltjson.db",
+            "cwd": "${workspaceFolder}",
+            "args": [ "--json={\\\"content\\\":\\\"creedo vanamees\\\", \\\"params\\\":{\\\"vmetltjson\\\":[\\\"--formattedjson\\\"]}}" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "vmetltjson guess",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/apps/cmdline/project/unix/vmetltjson.db",
+            "cwd": "${workspaceFolder}",
+            "args": [ "--json={\\\"content\\\":\\\"creedo vanamees\\\", \\\"params\\\":{\\\"vmetltjson\\\":[\\\"--formattedjson\\\", \\\"--guess\\\"]}}" ],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description":  "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },        
+    ]
+}

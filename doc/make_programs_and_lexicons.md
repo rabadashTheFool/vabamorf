@@ -3,19 +3,10 @@
 ## Dowload source code
 
 ```cmdline
-git clone https://github.com/Filosoft/vabamorf.git vabamorf
+git clone https://github.com/Filosoft/vabamorf.git vabamorf_github
 ```
 
-## Windows
-
-### Prerequisites
-
-* MS Visual Studio 2010
-
 ### Compiling
-
-* Open **_vabamorf/apps/cmdline/project/vc2010/cmdline.sln_**
-* Run the compiler.
 
 ## Linux
 
@@ -23,12 +14,14 @@ git clone https://github.com/Filosoft/vabamorf.git vabamorf
 
 * g++
 * gmake
+* [libjsoncpp-dev package](https://github.com/open-source-parsers/jsoncpp)
 
 ### Compiling
 
 ```cmdline
-cd vabamorf/apps/cmdline/project/unix
+cd vabamorf_github/apps/cmdline/project/unix
 ```
+
 Compiling all:
 
 ```cmdline
@@ -55,7 +48,7 @@ make -s vmety
 make -s vmets
 ```
 
-Compiled code will be in the directory  **_vabamorf/apps/cmdline/project/unix_**
+Compiled code will be in the directory  **_vabamorf_github/apps/cmdline/project/unix_**
 
 List of main programs
 | Program | Manual | Explanation |
@@ -72,7 +65,7 @@ List of main programs
 **NB!** If you make no changes in the source files of the lexicons, you need not build them.
 
 Pre-built analyzer lexicon **_et.dct_** and
-disambiguator lexicon **_et3.dct_** are in the directory **_vabamorf/dct/binary_**. Building the lexicons will overwrite these GitHUB-originating versions.
+disambiguator lexicon **_et3.dct_** are in the directory **_vabamorf_github/dct/binary_**. Building the lexicons will overwrite these GitHUB-originating versions.
 
 ### Prerequisites
 
@@ -83,7 +76,7 @@ disambiguator lexicon **_et3.dct_** are in the directory **_vabamorf/dct/binary_
 ### Compiling programs and building lexicons
 
 ```cmdline
-cd vabamorf/dct/sh
+cd vabamorf_github/dct/sh
 chmod +x *.sh
 ./nullist-uus-sonastik.sh
 ```

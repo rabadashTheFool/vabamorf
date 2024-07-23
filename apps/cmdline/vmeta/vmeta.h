@@ -7,15 +7,15 @@
 #include "../../../lib/etana/fs2gt.h"
 #include "../../../lib/etana/loefailist.h"
 
-class VMETANA
+class SPLIT_TOKENS
 {
 public:
-    VMETANA(void)
+    SPLIT_TOKENS(void)
     {
         InitClassVariables();
     }
 
-    VMETANA(int argc, FSTCHAR** argv, FSTCHAR** envp, const FSTCHAR* _ext_)
+    SPLIT_TOKENS(int argc, FSTCHAR** argv, FSTCHAR** envp, const FSTCHAR* _ext_)
     {
         InitClassVariables();
         Start(argc, argv, envp, _ext_);
@@ -138,14 +138,13 @@ public:
                 goto syntaks;
             }
             //-----------------------------
-            if(lipp_oleta_pn==true && lipp_xml==false)
-                fprintf(stderr,
-                    "--guesspropname lippu saab kasutada ainult koos --xml lipuga");
-            if(lipp_oleta==true && lipp_xml==false)
-                fprintf(stderr,
-                    "--guesspropname lippu saab kasutada ainult koos --guess lipuga");
-            goto syntaks;
         }
+        if(lipp_oleta_pn==true && (lipp_xml==false || lipp_oleta==false))
+        {
+            fprintf(stderr,
+                    "--guesspropnames lippu saab kasutada ainult koos --xml ja --guess lipuga\n");
+            goto syntaks;
+        } 
         if(i==argc)
             return; // std-sisend std-väljundiks
         if(i+2==argc)
@@ -332,13 +331,13 @@ private:
     }
 
     /** Copy-konstruktor on illegaalne */
-    VMETANA(const VMETANA&)
+    SPLIT_TOKENS(const SPLIT_TOKENS&)
     {
         assert(false);
     }
 
     /** Omistamisoperaator on illegaalne */
-    VMETANA & operator=(const VMETANA&)
+    SPLIT_TOKENS & operator=(const SPLIT_TOKENS&)
     {
         assert(false);
         return *this;
